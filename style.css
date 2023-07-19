@@ -25,6 +25,10 @@ a {
   text-decoration: none;
 }
 
+.head {
+  z-index: 100000;
+}
+
 .navbar {
   position: relative;
   min-height: 70px;
@@ -108,13 +112,13 @@ main button:nth-child(2) {
 }
 
 .main-container {
-  /* height: 70vh; */
+  height: 100vh;
   display: flex;
   flex-flow: column nowrap;
   justify-content: center;
   padding-top: 100px;
   padding-bottom: 30px;
-  background: repeat center url("./5559852.jpg");
+  background-color: #262626;
   /* width: 100%; */
 }
 
@@ -224,7 +228,6 @@ main button:nth-child(2) {
   display: flex;
   justify-content: center;
   align-items: center;
-  max-width: 1200px;
   flex-flow: column nowrap;
   z-index: 1;
 }
@@ -300,9 +303,56 @@ main button:nth-child(2) {
 
 
 
+/*************************************************** Footer ******************************************************/
+
+footer {
+  background-color: #6E07F3;
+  padding: 30px 40px;
+  color: #fff;
+}
+
+footer h6 {
+  text-align: center;
+  font-size: 1.8rem;
+  font-weight: 900;
+  letter-spacing: 3px;
+
+}
 
 
+footer p:first-of-type {
+  padding-block: 50px;
+}
 
+footer p:last-of-type {
+  margin-bottom: 30px;
+}
+
+footer p {
+  text-align: center;
+  font-weight: 300;
+  line-height: 2rem;
+  padding-inline: 20px;
+}
+
+footer ul {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px;
+  margin-right: 10px;
+
+}
+
+footer ul li a:link {
+  color: #fff;
+  transition: 0.2s ease-out;
+  font-weight: 300;
+}
+
+footer ul li a:hover {
+  color: #262626;
+  transition: 0.2s ease-in;
+}
 
 
 
@@ -346,7 +396,43 @@ main button:nth-child(2) {
   
 
   }
+
+
 }
 
 
-/* try position absolute/relative with nav-menu to get the hamburger menu to appear under it on webpage */
+
+@media(min-width:1200px) {
+
+
+  .main-container h1 {
+    font-size: 10rem;
+  }
+
+  .main-container p {
+    width: 75%;
+  }
+
+  .main-container button {
+    padding: 15px 20px ;
+  }
+
+  .wrapper {
+    width: 60%;
+    margin: 0 auto;
+  }
+
+  .container {
+    flex-flow: row wrap;
+    height: 50vh;
+  }
+
+  .wrapper2 h2:first-of-type {
+    font-size: 5rem;
+  }
+
+  footer div {
+    width: 60%;
+    margin: 0 auto;
+  }
+}
